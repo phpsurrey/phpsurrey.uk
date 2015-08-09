@@ -1,0 +1,40 @@
+body {
+  box-sizing: border-box;
+  color:#373737;
+  /*background: #212121;*/
+  background: #f2f2f2;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-weight: 700;
+  color:#222222;
+  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+}
+
+h2 {
+  padding-bottom: 1rem;
+  background: url('../images/bg_hr.png') repeat-x bottom;
+}
+p {
+  margin: 10px 0 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007edf;
+  text-shadow: none;
+
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
+

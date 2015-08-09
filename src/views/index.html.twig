@@ -1,34 +1,47 @@
-{% extends "layout.html.twig" %}
+{% extends layout %}
 
 {% block content %}
-<h3><a id="php-surrey" class="anchor" href="#php-surrey" aria-hidden="true"><span class="octicon octicon-link"></span></a>PHP Surrey</h3>
+<h2><a id="php-surrey" class="anchor" href="#php-surrey" aria-hidden="true"><span class="octicon octicon-link"></span></a>PHP Surrey</h2>
 
 <blockquote>
   <p>And from the Surrey Hills there came murmurings of a new PHP user group, coming this summer to a county near you....</p>
 </blockquote>
 
-<p><strong>We are proud to announce our inaugural meetup will be on the 2nd September 2015!</strong> Venue and further details TBA.</p>
+<p><strong>We are proud to announce our inaugural meetup will be on the 2nd September 2015!</strong> You can view further details and register to attend <a href="http://www.eventbrite.com/e/php-surrey-inaugural-september-meetup-tickets-17870907365?aff=www">here!</a>.</p>
 
 <p>
   <img src="./twitter.png" alt="Twitter" width="15px" height="15px">
   <a href="https://twitter.com/phpsurrey">Follow us on twitter</a> or <a href="http://eepurl.com/btyKP9">subscribe to our mailing list</a> for more updates
 </p>
 
-<div id="wrapper">
-  <div id="first">
-    <img src="https://pbs.twimg.com/profile_images/603199948272852992/c1AZWnbH.jpg" alt="PHP Surrey ElePHPants" width="300px" height="300px">
+<div class="row">
+  <div class="col-md-4">
+    <img src="https://pbs.twimg.com/profile_images/603199948272852992/c1AZWnbH.jpg" alt="PHP Surrey ElePHPants" class="img-responsive">
   </div>
-  <div id="second">
-    <div id="mc_embed_signup">
-      <form action="//phpsurrey.us11.list-manage.com/subscribe/post?u=332cc3a7b4aa5a9ef54a7922d&amp;id=392dcfea64" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-          <label for="mce-EMAIL">Subscribe to our mailing list</label>
-          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-          <div style="position: absolute; left: -5000px;"><input type="text" name="b_332cc3a7b4aa5a9ef54a7922d_392dcfea64" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+
+  <div class="col-md-8">
+
+    <div class="panel">
+      <form action="//phpsurrey.us11.list-manage.com/subscribe/post?u=332cc3a7b4aa5a9ef54a7922d&amp;id=392dcfea64" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" role="form">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="mce-EMAIL" class="control-label">Subscribe to our mailing list</label>
+              </div>
+              <div class="form-group">
+                <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="you@example.com" required>
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_332cc3a7b4aa5a9ef54a7922d_392dcfea64" tabindex="-1" value=""></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
         </div>
       </form>
     </div>
+
   </div>
 </div>
+
 {% endblock content %}

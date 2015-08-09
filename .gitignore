@@ -1,3 +1,5 @@
 .env
 /vendor/
 /composer.phar
+
+/bower_components

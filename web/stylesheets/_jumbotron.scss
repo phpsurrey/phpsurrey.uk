@@ -1,0 +1,22 @@
+.jumbotron {
+  background: #212121;
+  border-bottom: 1px solid #111;
+  margin-bottom: 0;
+
+  h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.2625rem;
+    font-weight: 700;
+    text-shadow: #111 0px 0px 10px;
+  }
+
+  .tagline {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background: none;
+    text-shadow: #111 0px 0px 10px;
+    margin: 10px 0 20px 0;
+  }
+}
