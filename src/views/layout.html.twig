@@ -2,19 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>PHP Surrey</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PHP Surrey: A new community driven PHP usergroup in the heart of Surrey (UK) with monthly meetups featuring a range of speakers">
+    {% block meta %}{% endblock %}
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/main.css">
-    <style type="text/css">
-      #mc_embed_signup {
-        background: #fff;
-        clear: left;
-        font: 14px Helvetica,Arial,sans-serif;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -25,8 +17,14 @@
 
     <div class="jumbotron">
       <header class="container">
-        <h1>PHP Surrey</h1>
-        <div class="tagline">A new community driven PHP usergroup in the heart of Surrey (UK) with monthly meetups featuring a range of speakers</div>
+        <div class="row">
+          <div class="col-md-3 hidden-xs hidden-sm">
+            <img src="/images/php-surrey-logo.png" alt="PHP Surrey Logo" width="197" height="134" />
+          </div>
+          <div class="col-md-9">
+            <h1>PHP Surrey</h1>
+            <div class="tagline">A new community driven PHP usergroup in the heart of Surrey (UK) with monthly meetups featuring a range of speakers</div>
+            </div>
       </header>
     </div>
 
@@ -68,7 +66,8 @@
       </p>
     </footer>
 
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
