@@ -1,0 +1,31 @@
+{% extends layout %}
+{% block meta %}
+  <title>PHP Surrey</title>
+  <meta name="description" content="PHP Surrey: A new community driven PHP usergroup in the heart of Surrey (UK) with monthly meetups featuring a range of speakers">
+{% endblock meta %}
+
+{% block content %}
+<h2><a id="php-surrey" class="anchor" href="#php-surrey" aria-hidden="true"><span class="octicon octicon-link"></span></a>PHP Surrey</h2>
+
+<blockquote>
+  <p>And from the Surrey Hills there came murmurings of a new PHP user group, coming this summer to a county near you....</p>
+</blockquote>
+
+<p><strong>We are proud to announce our inaugural meetup will be on the 2nd September 2015!</strong> You can view further details and register to attend <a href="http://www.eventbrite.com/e/php-surrey-inaugural-september-meetup-tickets-17870907365?aff=www">here!</a>.</p>
+
+<p>
+  <img src="./twitter.png" alt="Twitter" width="15px" height="15px">
+  <a href="https://twitter.com/phpsurrey">Follow us on twitter</a> or subscribe to our mailing list for more updates
+</p>
+
+<div class="row">
+  <div class="col-md-8">
+
+    <div class="panel">
+      {% embed "_mailing_list.html.twig" %}{% endembed %}
+    </div>
+
+  </div>
+</div>
+
+{% endblock content %}

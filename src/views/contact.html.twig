@@ -1,0 +1,25 @@
+{% extends layout %}
+{% block meta %}
+  <title>Stay in Touch - PHP Surrey</title>
+{% endblock meta %}
+
+{% block content %}
+<h2>Stay in touch</h2>
+
+<p>Want to chat with us and other members? Here are the best ways to find the group</p>
+
+<ul>
+  <li>IRC: <a href="https://kiwiirc.com/client/irc.freenode.net/?nick=guest|?#phpsurrey">#phpsurrey @ irc.freenode.net</a></li>
+  <li>Twitter: <a href="https://twitter.com/phpsurrey">@phpsurrey</a></li>
+  <li>Github: <a href="https://github.com/phpsurrey">phpsurrey</a></li>
+</ul>
+
+<div class="row">
+  <div class="col-md-8">
+    <div class="panel">
+      {% embed "_mailing_list.html.twig" %}{% endembed %}
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

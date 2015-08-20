@@ -1,0 +1,2 @@
+web: php -S localhost:$PORT -t web web/index.php
+worker: sass -w web/stylesheets/main.scss
