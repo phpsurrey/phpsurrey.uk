@@ -1,0 +1,41 @@
+{% extends layout %}
+{% block meta %}
+  <title>Events - PHP Surrey</title>
+{% endblock meta %}
+
+{% block content %}
+<h2>Events</h2>
+
+<p>Signup to <a href="http://www.eventbrite.co.uk/e/php-surrey-inaugural-september-meetup-registration-17870907365?aff=www">PHP Surrey Inaugural September Meetup on EventBrite</a></p>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "PHP Surrey Inaugural September Meetup",
+  "startDate" : "2014-09-02T19:00",
+  "url" : "http://www.eventbrite.com/e/php-surrey-inaugural-september-meetup-tickets-17870907365?aff=www",
+  "location" : {
+    "@type" : "Place",
+    "sameAs" : "http://guildford-institute.org.uk/",
+    "name" : "Guildford Institute",
+    "address" : "The Guildford Institute, Ward Street, Guildford, GU1 4LH"
+  },
+  "offers" : [{
+    "@type" : "Offer",
+    "name" : "General Registration",
+    "category" : "primary",
+    "price" : "0.00",
+    "priceCurrency" : "GBP",
+    "availability" : "OnlineOnly",
+    "url" : "http://www.eventbrite.com/e/php-surrey-inaugural-september-meetup-tickets-17870907365?aff=www"
+  }],
+  "performer" : [{
+    "@type" : "Person",
+    "name" : "Jenny Wong",
+    "sameAs" : "https://twitter.com/miss_jwo"
+  }]
+}
+</script>
+
+{% endblock content %}
