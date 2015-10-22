@@ -1,33 +1,66 @@
 {% extends layout %}
 {% block meta %}
-  <title>PHP Surrey</title>
-  <meta name="description" content="PHP Surrey: A new community driven PHP usergroup in the heart of Surrey (UK) with monthly meetups featuring a range of speakers">
+<title>PHP Surrey</title>
+<meta name="description" content="PHP Surrey: A new community driven PHP usergroup in the heart of Surrey (UK) with monthly meetups featuring a range of speakers">
 {% endblock meta %}
 
 {% block content %}
 <h2><a id="php-surrey" class="anchor" href="#php-surrey" aria-hidden="true"><span class="octicon octicon-link"></span></a>PHP Surrey</h2>
 
-<blockquote>
-  <p>And from the Surrey Hills there came murmurings of a new PHP user group, coming this summer to a county near you....</p>
-</blockquote>
+<p><strong>We are proud to announce our November meetup will be on the Wednesday 4th November 2015!</strong></p>
+<p>You can view further details <a href="/events">on our events page</a>.</p>
 
-<p><strong>We are proud to announce our october meetup will be on the 7th October 2015!</strong> You can view further details and register to attend <a href="http://www.eventbrite.co.uk/e/php-surrey-october-2015-meetup-registration-18614313914?aff=www">here!</a>.</p>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "PHP Surrey November 2015 Meetup",
+    "startDate" : "2015-11-04T19:00",
+    "endDate" : "2015-11-04T22:00",
+    "url" : "http://phpsurrey.uk/events",
+    "location" : {
+      "@type" : "Place",
+      "sameAs" : "http://guildford-institute.org.uk/",
+      "name" : "Guildford Institute",
+      "address" : "The Guildford Institute, Ward Street, Guildford, GU1 4LH"
+    },
+    "offers" : [{
+      "@type" : "Offer",
+      "name" : "General Registration",
+      "category" : "primary",
+      "price" : "0.00",
+      "priceCurrency" : "GBP",
+      "availability" : "OnlineOnly",
+      "url" : "http://phpsurrey.uk/events"
+    }],
+    "performer" : [{
+      "@type" : "Person",
+      "name" : "Chris Sherry",
+      "sameAs" : "https://twitter.com/tweetingsherry"
+    },
+    {
+      "@type" : "Person",
+      "name" : "Dave Hulbert",
+      "sameAs" : "https://twitter.com/dave1010"
+    }]
+}
+</script>
 
+<hr />
+
+<h3>Keep in touch</h3>
 <p>
-  <img src="./images/twitter.png" alt="Twitter" width="15px" height="15px">
-  <a href="https://twitter.com/phpsurrey">Follow us on twitter</a> or subscribe to our mailing list for more updates
+  We've listed the best ways to get in touch on our <a href="/contact">contact page</a>. Alternatively subscribe to our mailing list (below) for email updates.
 </p>
 
 <div class="row">
-  <div class="col-md-3">
-    <img src="images/elephpants_in_surrey.jpg" class="img-responsive" />
-  </div>
-  <div class="col-md-8 col-md-offset-1">
-
+  <div class="col-md-6">
     <div class="panel">
       {% embed "_mailing_list.html.twig" %}{% endembed %}
     </div>
-
+  </div>
+  <div class="col-md-6">
+    <img src="/images/elephpants_in_surrey.jpg" width="256" height="256" align="right" />
   </div>
 </div>
 
