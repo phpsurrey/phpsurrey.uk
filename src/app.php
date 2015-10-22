@@ -21,5 +21,9 @@ $app->get('/sponsors', function() use($app) {
   return $app['twig']->render('sponsors.html.twig');
 });
 
+$app->get('/sitemap.txt', function() use($app) {
+  return $app['twig']->render('sitemap.txt.twig');
+});
+
 $app->run();
 ?>
