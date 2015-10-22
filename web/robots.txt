@@ -1,0 +1,4 @@
+Sitemap: http://phpsurrey.uk/sitemap.txt
+
+User-agent: *
+Allow: /
