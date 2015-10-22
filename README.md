@@ -33,16 +33,3 @@ Hopefully the setup should just be a matter of dropping the repo on a server and
 You may also want to precomile the CSS with
 
     sass web/stylesheets/main.scss --style compressed > web/stylesheets/main.css
-
-### Deploying to Heroku
-
-## Fresh run
-
-Create you Heroku project & set the build pack:
-
-    heroku create phpsurrey --buildpack https://github.com/heroku/heroku-buildpack-php
-    heroku buildpacks:set https://github.com/heroku/heroku-buildpack-php
-
-## Normal deploy
-
-Just push to heroku :)
